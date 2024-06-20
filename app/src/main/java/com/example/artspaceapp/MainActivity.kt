@@ -97,6 +97,7 @@ fun Logic(){
 fun Ui(resource: Int ,ArtWorkTitle : String , ArtWorkArtist: String , onPreviousButton: () -> Unit , onNextButton: () -> Unit){
 
     Column(Modifier.padding(35.dp) , verticalArrangement = Arrangement.Center) {
+        Spacer(modifier = Modifier.height(50.dp))
         image(resource = resource)
         TextInformation(ArtWorkTitle = ArtWorkTitle, ArtWorkArtist = ArtWorkArtist)
 
